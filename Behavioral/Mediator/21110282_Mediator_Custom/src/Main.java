@@ -3,19 +3,27 @@ public class Main {
     public static void main(String[] args) {
         ChatMediator mediator = new ChatMediatorImpl();
 
-        User user1 = new UserExtends(mediator, "User 1");
-        User user2 = new UserExtends(mediator, "User 2");
-        User user3 = new UserExtends(mediator, "User 3");
-        User user4 = new UserExtends(mediator, "User 4");
-        User user5 = new UserExtends(mediator, "User 5");
+        User adminUser = new AdminUser(mediator, "Admin");
 
-        mediator.addUser(user1);
-        mediator.addUser(user2);
-        mediator.addUser(user3);
-        mediator.addUser(user4);
-        mediator.addUser(user5);
+        User employeeUser1 = new EmployeeUser(mediator, "Employee 1");
+        User employeeUser2 = new EmployeeUser(mediator, "Employee 2");
 
-        user1.send("Xin chào mọi người!!!");
+        User customerUser1 = new CustomerUser(mediator, "Customer 1");
+        User customerUser2 = new CustomerUser(mediator, "Customer 2");
+        User customerUser3 = new CustomerUser(mediator, "Customer 3");
+        User customerUser4 = new CustomerUser(mediator, "Customer 4");
+        User customerUser5 = new CustomerUser(mediator, "Customer 5");
+
+        mediator.addUser(adminUser);
+        mediator.addUser(employeeUser1);
+        mediator.addUser(employeeUser2);
+        mediator.addUser(customerUser1);
+        mediator.addUser(customerUser2);
+        mediator.addUser(customerUser3);
+        mediator.addUser(customerUser4);
+        mediator.addUser(customerUser5);
+
+        adminUser.send("Xin chào mọi người!!!");
     }
 
 }
