@@ -1,24 +1,27 @@
 public class Version {
 
     String content;
+    String timestamp;
 
-    String timestampl;
-
-    public Version(String content, String timestampl) {
+    public Version(String content, String timestamp) {
         this.content = content;
-        this.timestampl = timestampl;
+        this.timestamp = timestamp;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Version{" +
+                "content='" + content + '\'' +
+                ", timestamp='" + timestamp + '\'' +
+                '}';
     }
 
     public String getContent() {
         return content;
     }
 
-    public String getTimestampl() {
-        return timestampl;
+    public String getTimestamp() {
+        return timestamp;
     }
+
 }

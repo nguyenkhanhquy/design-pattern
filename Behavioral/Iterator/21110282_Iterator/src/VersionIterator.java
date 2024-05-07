@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class class VersionIterator<T> implements Iterator<T> {
+public class VersionIterator<T> implements Iterator<T> {
 
     private List<Version> versions;
     private int position;
