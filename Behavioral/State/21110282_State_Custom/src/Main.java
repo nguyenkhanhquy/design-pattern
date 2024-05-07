@@ -7,9 +7,9 @@ public class Main {
         TrafficLight trafficLight = new TrafficLight();
 
         // Mô phỏng việc thay đổi trạng thái của đèn giao thông
-        trafficLight.requestChange(); // Đỏ -> Vàng
-        trafficLight.requestChange(); // Vàng -> Xanh
-        trafficLight.requestChange(); // Xanh -> Đỏ
+        trafficLight.requestChange(); // Đỏ -> Xanh
+        trafficLight.requestChange(); // Xanh -> Vàng
+        trafficLight.requestChange(); // Vàng -> Đỏ
 
         System.out.println("--------------------------------------------");
 
