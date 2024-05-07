@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Document implements Iterable<Version> {
+public class File implements Iterable<Version> {
 
     private final List<Version> versions;
 
-    public Document() {
+    public File() {
         versions = new ArrayList<>();
     }
 
